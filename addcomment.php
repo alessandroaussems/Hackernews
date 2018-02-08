@@ -13,7 +13,7 @@ if (isset($_POST["insertcomment"]))
 		$query_id->execute();
 		$result_id=$query_id->fetch( PDO:: FETCH_ASSOC);
 		$_SESSION["commenting"]=array($_POST["id"],$_POST["commenttext"]);
-		if (empty($_POST["commenttext"])) 
+		if (empty($_POST["commenttext"]) || ctype_space($_POST["commenttext"]))
 		{
 			$error="Comment cannot be empty";
 		}
