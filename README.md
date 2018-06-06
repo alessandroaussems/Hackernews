@@ -1,2 +1,2 @@
 # Hackernews Remake
-- Live server: https://hackernews.alessandro.aussems.mtantwerp.eu
+- Live server: https://alessandroaussems.be/hackernews/
